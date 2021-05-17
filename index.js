@@ -14,9 +14,9 @@ export default {
 
     let friendCount = document.getElementById("ed_friend_count");
     if (friendCount) {
-      if (num === this._num) return; // don't update if # is the same as before
+      if (num === _num) return; // don't update if # is the same as before
       friendCount.innerHTML = num + (o ? " Online" : " Friends");
-      this._num = num;
+      _num = num;
       return;
     }
     const separator = document.querySelector(`.${sep.guildSeparator}`);
@@ -32,9 +32,9 @@ export default {
           friendCount,
           separator.parentElement
         );
-        this._num = num;
+        _num = num;
       } catch (err) {
-        error(err);
+        console.log(err);
       }
     }}
 	 sep = webpackModules.findByProps("guildSeparator");
