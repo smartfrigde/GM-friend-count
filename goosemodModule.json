@@ -1,0 +1,16 @@
+{
+    "main": "index.js",
+    "name": "Friend Count",
+    "description": "Shows Friend Count under Discord Logo",
+    "tags": [
+        "ui"
+    ],
+    "authors": [
+        "424639027606585356"
+    ],
+    "images": [
+        "http://res.publicdomainfiles.com/pdf_view/1/13483734017459.jpg",
+        "https://www.publicdomainpictures.net/pictures/310000/velka/canadian-goose-1565277034igV.jpg"
+    ],
+    "version": "1.0.0"
+}
