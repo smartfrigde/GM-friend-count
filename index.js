@@ -52,6 +52,15 @@ export default {
      addFriendCount();
       
     },
-    onRemove: () => {},
+    onRemove: () => {
+		const friendCount = document.getElementById("ed_friend_count");
+    if (friendCount) friendCount.remove();
+
+    sub.unsubscribe("CONNECTION_OPEN", addFriendCount());
+    sub.unsubscribe("CONNECTION_RESUMED", addFriendCount());
+    sub.unsubscribe("PRESENCE_UPDATE", addFriendCount());
+    sub.unsubscribe("RELATIONSHIP_ADD", addFriendCount());
+    sub.unsubscribe("RELATIONSHIP_REMOVE", addFriendCount());
+	},
   },
 };
